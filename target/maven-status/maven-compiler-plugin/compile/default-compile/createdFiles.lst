@@ -1,0 +1,10 @@
+model\generoVo.class
+controller\cancionController.class
+model\albumDao.class
+model\albumVo.class
+model\cancionDao.class
+controller\generoController.class
+model\generoDao.class
+controller\albumController.class
+model\Conexion.class
+model\cancionVo.class

@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+ <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+  <display-name>Disquera</display-name>
+
+  <welcome-file-list>
+     <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+<!-- GENERO -->
+<servlet>
+   <servlet-name>controller.generoController</servlet-name>
+   <servlet-class>controller.generoController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>controller.generoController</servlet-name>
+   <url-pattern>/genero</url-pattern>
+</servlet-mapping>
+
+<!-- ALBUM -->
+<servlet>
+   <servlet-name>controller.albumController</servlet-name>
+   <servlet-class>controller.albumController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>controller.albumController</servlet-name>
+   <url-pattern>/album</url-pattern>
+</servlet-mapping>
+
+<!-- CANCION -->
+<servlet>
+   <servlet-name>controller.cancionController</servlet-name>
+   <servlet-class>controller.cancionController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>controller.cancionController</servlet-name>
+   <url-pattern>/cancion</url-pattern>
+</servlet-mapping>
+</web-app>
